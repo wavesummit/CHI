@@ -1,0 +1,4 @@
+#CHI CLASS README
+A CHI number is a unique number given to a patient by the NHS in Scotland.
+Use the CHI class to create a CHI object which will store and validate its number, an exception will be thrown if the CHI number is not valid.
+
