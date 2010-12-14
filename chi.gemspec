@@ -10,3 +10,4 @@ Gem::Specification.new do |s|
   s.files = ["lib/chi.rb"]
   s.test_files =["test/tc_chi.rb"]
 end
+
