@@ -1,5 +1,5 @@
 require 'test/unit'
-require '../../chi/lib/chi'
+require '../lib/chi'
 
 class Chi_test < Test::Unit::TestCase
 
