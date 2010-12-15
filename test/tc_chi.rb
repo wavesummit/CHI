@@ -28,4 +28,5 @@ class Chi_test < Test::Unit::TestCase
      
   end
   
+>>>>>>> 71e9526ba69ff33464f6e4f7b20d2e98f1c33bfa
 end
