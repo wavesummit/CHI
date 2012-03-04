@@ -1,6 +1,12 @@
 CHI README
 A CHI number is a unique number given to a patient by the NHS in Scotland.
-Use the is_chi? method on a string to validate if a string is a valid patient number.
+Use the chi? method  to validate if a string is a valid patient number.
 
 Example:
-"00232423423".is_chi? => false
+The chi? method is a mixin which can extend a class.
+
+class PatNum
+  extend PatientNumber
+end
+
+PatNum.chi?( "00232423423" ) => false

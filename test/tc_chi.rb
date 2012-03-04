@@ -1,13 +1,17 @@
 require 'test/unit'
 require '../lib/chi'
 
+class PatNum
+  extend PatientNumber
+end
+
 class Chi_test < Test::Unit::TestCase
 
   def test_invalid_chi
 
-    assert_equal false, "1234".is_chi?
-    assert_equal false, "0000000000".is_chi?
-    assert_equal false, "0601310021".is_chi?
+    assert_equal false, PatNum.chi?( "1234" ) 
+    assert_equal false, PatNum.chi?( "0000000000" )
+    assert_equal false, PatNum.chi?( "0601310021" )
 
   end
   
@@ -22,9 +26,7 @@ class Chi_test < Test::Unit::TestCase
                   '0201370050',
                   '0107500930']
 
-    valid_chi.each do |n|
-      assert n.is_chi?    
-    end  
+    valid_chi.each{ |n| assert PatNum.chi? n }
      
   end
 
